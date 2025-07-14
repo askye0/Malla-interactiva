@@ -12,6 +12,7 @@ const cursos = [
   { id: 10, nombre: "Taller de Diseño II: Elementos", semestre: 2, desbloquea: [14] },
   { id: 11, nombre: "Realidad Nacional y Globalización", semestre: 2, desbloquea: [12] },
   { id: 12, nombre: "Ética y Ciudadanía", semestre: 3, desbloquea: [15] },
+  { id: 54, nombre: "Territorio y Hábitat Sostenible", semestre: 2, desbloquea: [] },
 
   { id: 13, nombre: "English III", semestre: 3, desbloquea: [16] },
   { id: 14, nombre: "Taller de Diseño III: Sistemas", semestre: 3, desbloquea: [18] },
