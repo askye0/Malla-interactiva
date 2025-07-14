@@ -97,9 +97,13 @@ document.querySelectorAll(".curso").forEach(div => {
   });
 });
 
-// Activar los cursos iniciales (sin prerequisitos)
-[1, 2, 3, 4, 5, 6].forEach(id => {
-  const inicial = document.getElementById("curso" + id);
-  inicial.classList.remove("bloqueado");
-  inicial.classList.add("desbloqueado");
+// Activar automáticamente los cursos que nadie los desbloquea
+const idsDesbloqueados = new Set(cursos.flatMap(c => c.desbloquea));
+
+cursos.forEach(curso => {
+  if (!idsDesbloqueados.has(curso.id)) {
+    const div = document.getElementById("curso" + curso.id);
+    div.classList.remove("bloqueado");
+    div.classList.add("desbloqueado");
+  }
 });
