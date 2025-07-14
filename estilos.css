@@ -1,0 +1,43 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #F8F8F5;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.contenedor-malla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.curso {
+  padding: 12px;
+  border-radius: 10px;
+  background-color: #ccc;
+  color: white;
+  opacity: 0.4;
+  cursor: not-allowed;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 180px;
+}
+
+.curso.desbloqueado {
+  background-color: #A7AD89; /* Sage */
+  opacity: 1;
+  cursor: pointer;
+}
+
+.curso.aprobado {
+  background-color: #697254; /* Forest */
+  text-decoration: line-through;
+  opacity: 1;
+}
