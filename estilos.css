@@ -1,0 +1,39 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #DBD0C4; /* Cream */
+  color: #3a3a3a;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #697254; /* Forest */
+  font-size: 28px;
+}
+
+h2 {
+  color: #697254; /* Forest */
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 90%;
+  background-color: #A7AD89; /* Sage */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+td, th {
+  border: 1px solid #92735C; /* Earth */
+  padding: 12px;
+  font-size: 16px;
+  color: #3a3a3a;
+}
+
+td:hover {
+  background-color: #8C916C; /* Moss */
+  cursor: pointer;
+  color: white;
+}
