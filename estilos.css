@@ -1,39 +1,62 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #DBD0C4; /* Cream */
-  color: #3a3a3a;
+  background-color: #F8F8F5;
   padding: 20px;
-  text-align: center;
+  color: #333;
 }
 
 h1 {
-  color: #697254; /* Forest */
-  font-size: 28px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-h2 {
-  color: #697254; /* Forest */
-  margin-top: 40px;
-  font-size: 22px;
+.semestre {
+  margin-bottom: 40px;
 }
 
-table {
-  margin: 20px auto;
-  border-collapse: collapse;
-  width: 90%;
+.semestre h2 {
+  background-color: #DBD0C4; /* Cream */
+  padding: 10px;
+  border-radius: 10px;
+  color: #4B3A2F;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+li {
+  padding: 15px 20px;
+  border-radius: 12px;
   background-color: #A7AD89; /* Sage */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  cursor: not-allowed;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+  flex: 1 1 calc(30% - 10px);
+  text-align: center;
 }
 
-td, th {
-  border: 1px solid #92735C; /* Earth */
-  padding: 12px;
-  font-size: 16px;
-  color: #3a3a3a;
-}
-
-td:hover {
-  background-color: #8C916C; /* Moss */
+/* 🔓 Curso desbloqueado (activo) */
+li.desbloqueado {
   cursor: pointer;
-  color: white;
+  opacity: 1;
+  background-color: #8C916C; /* Moss */
+}
+
+/* ✅ Curso aprobado (clickeado) */
+li.aprobado {
+  background-color: #697254; /* Forest */
+  color: #fff;
+}
+
+/* 🔒 Bloqueado aún (sin prerrequisitos cumplidos) */
+li.bloqueado {
+  opacity: 0.3;
+  cursor: not-allowed;
+  background-color: #DDD;
 }
