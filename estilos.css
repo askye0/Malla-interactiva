@@ -1,63 +1,62 @@
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f5f7;
-  color: #333;
-  padding: 20px;
-  text-align: center;
+  background-color: #f0f4f8;
+  padding: 30px;
+  color: #222;
 }
 
 h1 {
-  margin-bottom: 30px;
-  font-size: 2em;
-  color: #333;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2a4d34;
 }
 
 .contenedor-malla {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 25px;
   justify-items: center;
   padding: 20px;
 }
 
-/* Tarjetita base */
+/* Tarjetita general */
 .curso {
-  padding: 16px;
-  border-radius: 15px;
-  background-color: #ccc;
+  background-color: #d0d0d0;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
   color: white;
-  opacity: 0.4;
-  cursor: not-allowed;
+  opacity: 0.3;
   transition: all 0.3s ease;
   width: 100%;
-  max-width: 180px;
-  min-height: 100px;
+  max-width: 200px;
+  min-height: 110px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  font-weight: 600;
-  font-size: 0.95em;
+  font-size: 1em;
+  cursor: not-allowed;
 }
 
-/* Curso desbloqueado */
+/* Desbloqueado */
 .curso.desbloqueado {
-  background-color: #A1C398; /* verde suave tipo sage */
-  color: #fff;
+  background: linear-gradient(145deg, #a8df8e, #6fbf73);
   opacity: 1;
   cursor: pointer;
+  color: #fff;
 }
 
 .curso.desbloqueado:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: scale(1.08);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Curso aprobado */
+/* Aprobado */
 .curso.aprobado {
-  background-color: #4F6F52; /* verde oscuro para aprobado */
+  background-color: #40513b;
   text-decoration: line-through;
+  color: #dcdcdc;
   opacity: 1;
-  color: #e8e8e8;
 }
