@@ -2,121 +2,132 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malla Interactiva</title>
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <h1>Malla Interactiva - Arquitectura</h1>
+  <h1>Malla Interactiva</h1>
 
-  <!-- SEMESTRES -->
-  <h2>Primer semestre</h2>
-  <table>
-    <tr><th>Curso</th><th>Estado</th></tr>
-    <tr><td>English I</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Matemática</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Lenguaje y Comunicación</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Fundamentos en Competencias Digitales</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Expresión Gráfica Analógica I</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Taller de Diseño I: Elementos</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-  </table>
+  <div class="semestre">
+    <h2>📚 Primer semestre</h2>
+    <ul>
+      <li id="curso1">English I</li>
+      <li id="curso2">Matemática</li>
+      <li id="curso3">Lenguaje y Comunicación</li>
+      <li id="curso4">Fundamentos en Competencias Digitales</li>
+      <li id="curso5">Expresión Gráfica Analógica I</li>
+      <li id="curso6">Taller de Diseño I: Elementos</li>
+    </ul>
+  </div>
 
-  <h2>Segundo semestre</h2>
-  <table>
-    <tr><th>Curso</th><th>Estado</th></tr>
-    <tr><td>English II</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Realidad Nacional y Globalización</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Lenguaje y Comunicación II</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Territorio y Hábitat Sostenible</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Expresión Gráfica Analógica II</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Taller de Diseño II: Elementos</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-  </table>
+  <div class="semestre">
+    <h2>📚 Segundo semestre</h2>
+    <ul>
+      <li id="curso7">English II</li>
+      <li id="curso8">Realidad Nacional y Globalización</li>
+      <li id="curso9">Lenguaje y Comunicación II</li>
+      <li id="curso10">Territorio y Hábitat Sostenible</li>
+      <li id="curso11">Expresión Gráfica Analógica II</li>
+      <li id="curso12">Taller de Diseño II: Elementos</li>
+    </ul>
+  </div>
 
-  <h2>Tercer semestre</h2>
-  <table>
-    <tr><th>Curso</th><th>Estado</th></tr>
-    <tr><td>English III</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Ética y Ciudadanía</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Administración para los Negocios</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Procesos de la Arquitectura 1</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Expresión Gráfica Analógica 2</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Taller de Diseño III: Sistemas</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-  </table>
+  <div class="semestre">
+    <h2>📚 Tercer semestre</h2>
+    <ul>
+      <li id="curso13">English III</li>
+      <li id="curso14">Ética y Ciudadanía</li>
+      <li id="curso15">Administración para los Negocios</li>
+      <li id="curso16">Procesos de la Arquitectura I</li>
+      <li id="curso17">Expresión Gráfica Analógica III</li>
+      <li id="curso18">Taller de Diseño III: Sistemas</li>
+    </ul>
+  </div>
 
-  <h2>Cuarto semestre</h2>
-  <table>
-    <tr><th>Curso</th><th>Estado</th></tr>
-    <tr><td>English IV</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Fundamentos del Liderazgo Sostenible</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Principios de Economía</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Procesos de la Arquitectura 2</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Construcción 1</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Taller de Diseño IV: Espacios Urbanos y Territoriales</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-  </table>
+  <div class="semestre">
+    <h2>📚 Cuarto semestre</h2>
+    <ul>
+      <li id="curso19">English IV</li>
+      <li id="curso20">Fundamentos del Liderazgo Sostenible</li>
+      <li id="curso21">Principios de Economía</li>
+      <li id="curso22">Procesos de la Arquitectura II</li>
+      <li id="curso23">Construcción I</li>
+      <li id="curso24">Taller de Diseño IV: Espacios Urbanos y Territoriales</li>
+    </ul>
+  </div>
 
-  <h2>Quinto semestre</h2>
-  <table>
-    <tr><th>Curso</th><th>Estado</th></tr>
-    <tr><td>Estadística Descriptiva e Inferencia Estadística</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Fundamentos Contables y Financieros</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Marketing</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Expresión Gráfica Digital 1</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Construcción 2</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Taller de Diseño V: Ciudades</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-  </table>
+  <div class="semestre">
+    <h2>📚 Quinto semestre</h2>
+    <ul>
+      <li id="curso25">Estadística Descriptiva e Inferencia Estadística</li>
+      <li id="curso26">Fundamentos Contables y Financieros</li>
+      <li id="curso27">Marketing</li>
+      <li id="curso28">Expresión Gráfica Digital I</li>
+      <li id="curso29">Construcción II</li>
+      <li id="curso30">Taller de Diseño V: Ciudades</li>
+    </ul>
+  </div>
 
-  <h2>Sexto semestre</h2>
-  <table>
-    <tr><th>Curso</th><th>Estado</th></tr>
-    <tr><td>Metodología de la Investigación Científica</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Oportunidades de Negocios</td><td onclick="desbloquear(this)">Bloqueado 🔒<tr><td>Sist. Inf. Geografía y Topografía</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Expresión Gráfica Digital 2</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Estructuras 1</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Taller de Diseño VI: Urbanismo</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-  </table>
+  <div class="semestre">
+    <h2>📚 Sexto semestre</h2>
+    <ul>
+      <li id="curso31">Metodología de la Investigación Científica</li>
+      <li id="curso32">Oportunidades de Negocios</li>
+      <li id="curso33">Sist. Inf. Geografía y Topografía</li>
+      <li id="curso34">Expresión Gráfica Digital II</li>
+      <li id="curso35">Estructuras I</li>
+      <li id="curso36">Taller de Diseño VI: Urbanismo</li>
+    </ul>
+  </div>
 
-  <h2>Séptimo semestre</h2>
-  <table>
-    <tr><th>Curso</th><th>Estado</th></tr>
-    <tr><td>Normatividad y Gestión</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Urban Historical Processes</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Sociedad, Ciudad y Territorio I</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Procesos de la Arquitectura Peruana</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Estructuras 2</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Taller de Diseño VII: Territorios</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-  </table>
+  <div class="semestre">
+    <h2>📚 Séptimo semestre</h2>
+    <ul>
+      <li id="curso37">Normatividad y Gestión</li>
+      <li id="curso38">Urban Historical Processes</li>
+      <li id="curso39">Sociedad, Ciudad y Territorio I</li>
+      <li id="curso40">Procesos de la Arquitectura Peruana</li>
+      <li id="curso41">Estructuras II</li>
+      <li id="curso42">Taller de Diseño VII: Territorios</li>
+    </ul>
+  </div>
 
-  <h2>Octavo semestre</h2>
-  <table>
-    <tr><th>Curso</th><th>Estado</th></tr>
-    <tr><td>Electivo 1</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Diseño Urbano</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Sociedad, Ciudad y Territorio II</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Arquitectura y Medioambiente</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Gestión en la Construcción</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Taller de Diseño VIII: Infraestructura</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-  </table>
+  <div class="semestre">
+    <h2>📚 Octavo semestre</h2>
+    <ul>
+      <li id="curso43">Electivo 1</li>
+      <li id="curso44">Diseño Urbano</li>
+      <li id="curso45">Sociedad, Ciudad y Territorio II</li>
+      <li id="curso46">Arquitectura y Medioambiente</li>
+      <li id="curso47">Gestión en la Construcción</li>
+      <li id="curso48">Taller de Diseño VIII: Infraestructura</li>
+    </ul>
+  </div>
 
-  <h2>Noveno semestre</h2>
-  <table>
-    <tr><th>Curso</th><th>Estado</th></tr>
-    <tr><td>Electivo 2</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Electivo 3</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Megaproyectos</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Sostenibilidad y Vivienda Social</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Seminario de Investigación y Tesis</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Taller de Diseño IX: Proyecto de Tesis</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-  </table>
+  <div class="semestre">
+    <h2>📚 Noveno semestre</h2>
+    <ul>
+      <li id="curso49">Electivo 2</li>
+      <li id="curso50">Electivo 3</li>
+      <li id="curso51">Megaproyectos</li>
+      <li id="curso52">Sostenibilidad y Vivienda Social</li>
+      <li id="curso53">Seminario de Investigación y Tesis</li>
+      <li id="curso54">Taller de Diseño IX: Proyecto de Tesis</li>
+    </ul>
+  </div>
 
-  <h2>Décimo semestre</h2>
-  <table>
-    <tr><th>Curso</th><th>Estado</th></tr>
-    <tr><td>Electivo 4</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Electivo 5</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Visión Geopolítica</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Seminario de Sostenibilidad Urbana</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Real Estate Marketing</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-    <tr><td>Proyecto Integrador</td><td onclick="desbloquear(this)">Bloqueado 🔒</td></tr>
-  </table>
+  <div class="semestre">
+    <h2>📚 Décimo semestre</h2>
+    <ul>
+      <li id="curso55">Electivo 4</li>
+      <li id="curso56">Electivo 5</li>
+      <li id="curso57">Visión Geopolítica</li>
+      <li id="curso58">Seminario de Sostenibilidad Urbana</li>
+      <li id="curso59">Real Estate Marketing</li>
+      <li id="curso60">Proyecto Integrador</li>
+    </ul>
+  </div>
 
   <script src="script.js"></script>
 </body>
