@@ -61,28 +61,32 @@ const cursos = [
   { id: 53, nombre: "Visión Geopolítica", semestre: 10, desbloquea: [] },
 ];
 
-// Crear los bloques de semestres
+// Mostrar los cursos por semestre
 const contenedor = document.getElementById("malla");
 for (let s = 1; s <= 10; s++) {
   const bloque = document.createElement("div");
   const titulo = document.createElement("h2");
   titulo.textContent = `📚 Semestre ${s}`;
-  titulo.style.marginBottom = "10px";
+  titulo.style.margin = "25px 0 10px";
   bloque.appendChild(titulo);
 
   const cursosDelSemestre = cursos.filter(c => c.semestre === s);
+  const fila = document.createElement("div");
+  fila.className = "contenedor-malla";
+
   cursosDelSemestre.forEach(curso => {
     const div = document.createElement("div");
     div.textContent = curso.nombre;
     div.className = "curso bloqueado";
     div.id = "curso" + curso.id;
-    bloque.appendChild(div);
+    fila.appendChild(div);
   });
 
+  bloque.appendChild(fila);
   contenedor.appendChild(bloque);
 }
 
-// Activar los cursos iniciales (que no tienen prerrequisitos)
+// Activar los cursos iniciales (sin prerrequisitos)
 const idsDesbloqueados = new Set(cursos.flatMap(c => c.desbloquea));
 cursos.forEach(curso => {
   if (!idsDesbloqueados.has(curso.id)) {
@@ -92,7 +96,7 @@ cursos.forEach(curso => {
   }
 });
 
-// Función de aprobación y desbloqueo
+// Funcionalidad de clic
 document.querySelectorAll(".curso").forEach(curso => {
   curso.addEventListener("click", () => {
     if (!curso.classList.contains("desbloqueado")) return;
